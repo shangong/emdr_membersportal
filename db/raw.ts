@@ -1,0 +1,2 @@
+import { env } from "cloudflare:workers";
+export function getD1(): D1Database { if (!env.DB) throw new Error("Database is unavailable"); return env.DB; }
